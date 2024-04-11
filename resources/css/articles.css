@@ -1,0 +1,263 @@
+/*To be used for each "article-based" page*/
+
+div.masthead
+{
+	width: 100%;
+	height: 50vh;
+	max-height: 800px;
+}
+
+div.mastheadBG
+{
+	position: relative;
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+img.mastheadImage
+{
+	position: absolute;
+	width: 2160px;
+	height: 900px;
+	transition: 1s ease opacity;
+}
+img.mastheadInactiveImage
+{
+	opacity: 0;
+}
+
+div.mastheadTextBox
+{
+	position:relative;
+	width: 35%;
+	top: -70%;
+	padding-left: 40px;
+}
+
+div.mastheadTextBox > h1
+{
+	text-shadow: 4px 4px 2px #0e2a56;
+	margin: auto;
+	font-size: 3.5em;
+}
+
+div.mastheadFade
+{
+	position: relative;
+	height: 50%;
+	top:-50%;
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+}
+
+div.navSection
+{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding: 20px;
+	max-width: 100%;
+	border-top: 5px solid #000;
+	overflow: hidden;
+}
+
+a.navSectionLink
+{
+	border: 5px solid #000;
+	display: block;
+	position: relative;
+}
+div.navSectionTextbox
+{
+	display: block;
+	position: absolute;
+	width: 150px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	font-size: 1.25em;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+
+div.navSectionOverlay
+{
+	position: relative;
+	top: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.6;
+	transition: .5s ease opacity;
+}
+
+a.navSectionLink:hover div.navSectionOverlay
+{
+	opacity: 0.9;
+}
+
+
+/*150x240 is golden-ratio-ish size*/
+div.navSectionBGContainer
+{
+	display: block;
+	width: 240px;
+	height: 150px;
+}
+img.navSectionBG
+{
+	position:absolute;
+	top: 0%;
+	left: 0%;
+	transition: 2s ease;
+	width: 240px;
+	height: 150px;
+}
+
+img.navSectionInactiveBG
+{
+	opacity: 0;
+}
+
+div.contentWrapper
+{
+}
+
+section.article
+{
+}
+
+div.articleHeader
+{
+	height: 400px;
+	display: flex;
+	width: 100%;
+}
+
+div.articleHeaderInfo
+{
+	flex-grow: 1;
+	text-align: center;
+	border-right: 0px;
+	border-bottom: 0px;
+}
+
+div.articleHeaderInfo > h2
+{
+	font-size: 2em;
+	margin: 15px 10px;
+}
+
+h3.articleInfo
+{ 
+	font-size: 1.25em;
+}
+h4.articleInfo
+{
+	font-size: 1.0em;
+}
+
+div.articleHeaderGallery
+{
+	display: grid;
+	grid-template-columns: 640px auto;
+	grid-template-rows: 365px auto;
+	border-bottom: 0px;
+}
+
+div.articleImageContainer
+{
+	border-bottom: 5px solid #000;
+	max-width: 640px;
+	width: 640px;
+	max-height: 360px;
+	height: 360px;
+}
+
+div.articleImageText
+{
+	color: #fff;
+	text-align: center;
+	width: 640px;
+	padding: 6px 0px;
+}
+
+div.articleImageTextInactive
+{
+	display: none;
+}
+
+div.articleGalleryImageSelector
+{
+	grid-row: 1 / 3;
+	grid-column: 2;
+	border-left: 5px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+div.articleGallerySelction > img
+{
+	width: 128px;
+	height: 72px;
+}
+
+div.articleGallerySelectionOverlay
+{
+	position:relative;
+	top: -100%;
+	height: 100%;
+	opacity: 0;
+	transition: .2s ease;
+	cursor: pointer;
+}
+
+div.articleGallerySelction:hover div.articleGallerySelectionOverlay
+{
+	opacity: 0.5;
+	background-color: #000;
+}
+
+div.articleSelectionActive
+{
+	opacity: 0.8;
+}
+
+img.articleHeaderImage
+{
+	position: absolute;
+	display: block;
+	margin-left: 0px;
+	height: 360px;
+	width: 640px;
+	transition: .5s ease opacity;
+}
+img.articleImageInactive
+{
+	opacity: 0;
+}
+
+div.articleTextContainer
+{
+	padding:20px;
+}
+
+p.articleText
+{
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+a.articleLink
+{
+	margin-left: 10px;
+}
+
+div.articleSpacer
+{
+	height: 15vh;
+}

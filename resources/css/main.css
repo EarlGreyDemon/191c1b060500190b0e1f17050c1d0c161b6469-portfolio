@@ -1,0 +1,291 @@
+/*Generic classes here are an attempt to uncomplicate having multiple classes*/
+.headerText
+{
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.subHeaderText
+{
+	color: #000;
+}
+
+.descText
+{
+	color: #000;
+}
+
+.linkText
+{
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.linkText:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+.linkTextAlt
+{
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.linkTextAlt:hover
+{
+	color: #94d8bf;
+}
+
+.boldText
+{
+	font-weight: bold;
+}
+
+.normalWeightText
+{
+	font-weight: normal;
+}
+
+.underLinedText
+{
+	text-decoration: underline;
+}
+
+.primaryColor
+{
+	background-color: #0e2a56;
+}
+.primarySubColor
+{
+	background-color: #284574;
+}
+
+.accentColor
+{
+	background-color: #c8e9dd;
+}
+.accentSubColor
+{
+	background-color: #94d8bf;
+}
+
+.whiteElement
+{
+	background-color: #fff;
+}
+.blackElement
+{
+	background-color: #000;
+}
+
+.blackOutline
+{
+	border: 5px solid #000;
+}
+
+
+*
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+	margin: 0;
+}
+
+/*I am annoyed that I have to stick background.png in the css folder for this to work*/
+div.background
+{
+	background-repeat: repeat;
+	background-image: url("background.png");
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: -2;
+	opacity: 0.3;
+}
+
+header
+{
+	z-index: 3;
+	position: fixed;
+	width: 100%;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+}
+
+div.headerTitleBar
+{
+	display: inline;
+	margin: auto;
+	padding-left: 15px;
+	height: 100%;
+/*	
+	text-decoration: none;
+	color: white;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-right: 35%;
+*/
+}
+div.headerTitleBar > a
+{
+	text-decoration: none;
+}
+
+div.headerTitleFlex
+{
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+}
+
+img.headerTitleIcon
+{
+	padding-left: 10px;
+}
+
+
+h1.headerTitleText
+{
+	margin: auto;
+	padding-left: 15px;
+/*	
+	font-size: 1.5em;
+*/
+}
+
+div.headerSpacer
+{
+	flex-grow: 10;
+}
+
+div.headerNavBar
+{
+	flex-grow: 1;
+}
+
+div.headerNavList
+{
+	width: 100%;
+	margin: auto;
+	float: right;
+	display: flex;
+	justify-content: center;
+}
+
+div.headerNavBox
+{
+	float: right;
+	margin: 5px;
+}
+
+a.headerNavText
+{
+	display: block;
+	padding: 10px;
+}
+
+a.headerNavText:hover
+{
+	background-color: #c8e9dd;
+}
+
+div.headerNavBox:hover div.headerNavDropdown
+{
+	display: block;
+}
+
+/*to be hidden until headerNavBox or text gets hovered over*/
+div.headerNavDropdown
+{
+	display: none;
+	position: fixed;
+	max-width: 150px;
+}
+
+a.headerNavDropdownLink
+{
+	display: block;
+	max-width: 150px;
+	max-height: 50px;
+	margin: 5px;
+	text-decoration: none;
+}
+
+a.headerNavDropdownLink > div:hover
+{
+	background-color: #c8e9dd;
+}
+
+h5.headerNavDropdownText
+{
+	font-size: 0.9em;
+	display:block;
+	margin: 8px;
+}
+
+/*Since I use a fixed position header, anchors must be displaced by ~60px or the browser ends up below the intended area*/
+div.sectionAnchor
+{
+	height: 65px;
+}
+
+span.moreInfo
+{
+	cursor: help;
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+}
+
+
+footer
+{
+	margin: 0px;
+	padding: 20px 25px;
+}
+
+a.footerlink
+{
+	padding-left: 0px;
+	padding-right: 20px;
+	text-decoration: underline;
+}
+
+div.linkImageCombo
+{
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	padding: 10px;
+}
+
+div.linkImageCombo > a > img
+{
+	position: relative;
+	display: inline-block;
+	height: 25px;
+}
+div.linkImageCombo > a > div
+{
+	position: relative;
+	display: inline-block;
+	top: -8px;
+	height: 22px;
+	text-decoration: underline;
+}
+div.linkImageCombo > a
+{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	text-decoration: none;
+}

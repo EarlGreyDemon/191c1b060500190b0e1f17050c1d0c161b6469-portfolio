@@ -1,0 +1,103 @@
+div.aboutHeaderSpacer
+{
+	height: 75px;
+}
+
+div.aboutSection
+{
+	position: relative;
+	width: 80%;
+	left: 10%;
+}
+
+div.aboutHeader
+{
+	padding: 10px 25px;
+	border-bottom: 5px solid #000;
+}
+
+div.aboutHeader > h1
+{
+	margin: 0px;
+	letter-spacing: 1px;
+}
+
+div.aboutDescription
+{
+	display: flex;
+	overflow: hidden;
+}
+
+div.aboutText
+{
+	flex-shrink: 1;
+	flex-basis: 1000px;
+}
+
+div.aboutImageContainer
+{
+	position: relative;
+	left: 0px;
+	padding: 0px 15px;
+	margin: auto;
+}
+div.aboutImageContainer > img
+{
+	width: 300px;
+	height: 300px;
+}
+
+
+div.aboutSubSection
+{
+	padding: 10px 35px;
+}
+div.aboutSubSection > h2
+{
+	padding: 5px 0px;
+	font-size: 1.25em;
+	margin: 0px;
+}
+
+div.aboutGrid
+{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	width: 100%:
+}
+h3.aboutGridHeader
+{
+	font-size: 1.1em;
+	width: 100%;
+	text-align: left;
+	padding: 5px 5px;
+	margin: 0px;
+}
+ul.aboutGridDataColumn
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+li.aboutGridData
+{
+	margin: 5px;
+}
+
+
+p.newline
+{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+p.newparagraph
+{
+	margin-top: 10px;
+	margin-bottom:2px;
+}
+
+div.aboutBottomSpacer
+{
+	height: 10vh;
+}
