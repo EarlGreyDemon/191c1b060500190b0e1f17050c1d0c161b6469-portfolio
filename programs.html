@@ -9,9 +9,9 @@
 	<link href="./resources/css/articles.css" type="text/css" rel="stylesheet">
 	<link rel="shortcut icon" href="./resources/img/quicheicon.png">
 </head>
-<body class="whiteElement">
+<body>
 <div class="background"></div>
-	<header class="primaryColor">
+	<header class="primaryColor  blackUnderline">
 		<div class="headerTitleBar">
 			<a href="index.html">
 				<div class="headerTitleFlex">
@@ -130,6 +130,12 @@
 								<h5 class="headerNavDropdownText normalWeightText">Project Euler Solutions (C++)</h5>
 							</div>
 						</a>
+						<!--Programs/Vectors/Matrices nav-->
+						<a class="primarySubColor headerNavDropdownLink" href="programs.html#vectormatrix">
+							<div class="linktext">
+								<h5 class="headerNavDropdownText normalWeightText">Custom Vector / Matrix Classes</h5>
+							</div>
+						</a>
 					</div>
 				</div>
 				
@@ -235,6 +241,20 @@
 			<div class="navSectionOverlay"></div>
 			<div class="navSectionTextbox">
 				Project Euler Solutions (C++)
+			</div>
+		</a>
+		
+		<!--Vector/Matrix classes-->
+		<a class="linkTextAlt navSectionLink" href="programs.html#vectormatrix">
+			<div class="navSectionBGContainer">
+				<img class="navSectionBG" src="./resources/img/programs/nav/vectormatrix1.png">
+				<img class="navSectionBG navSectionInactiveBG" src="./resources/img/programs/nav/vectormatrix2.png">
+				<img class="navSectionBG navSectionInactiveBG" src="./resources/img/programs/nav/vectormatrix3.png">
+				<img class="navSectionBG navSectionInactiveBG" src="./resources/img/programs/nav/vectormatrix4.png">
+			</div>
+			<div class="navSectionOverlay"></div>
+			<div class="navSectionTextbox">
+				Custom Vector/Matrix Classes
 			</div>
 		</a>
 	</div>
@@ -534,13 +554,89 @@
 				
 			</div>
 		</section>
+				
+		<div class="articleSpacer"></div>
+		
+		<!--Vectors/Matrices-->
+		<div class="sectionAnchor" id="vectormatrix"></div>
+		<section class="article">
+			<div class="articleHeader">
+				<div class="blackOutline primarySubColor articleHeaderInfo">
+					<h2 class="headerText">Custom Vector / Matrix classes</h2>
+					<h3 class="headerText articleInfo">
+						<i>5/2024</i>
+					</h3>
+					<h4 class="headerText articleInfo">
+						<i>
+							Languages/Engines used:
+							<span class="moreInfo" title="Coursework assignment required us to use C++">C++</span> and
+							<span class="moreInfo" title="The classes were built specifically for OpenGL implementation">OpenGL</span>
+						</i>
+					</h4>
+					<h4 class="headerText articleInfo">
+						<i>
+							Tools used:
+							<span class="moreInfo" title="Visual studio is an IDE I am familar with">Visual Studio</span>
+						</i>
+					</h4>
+				</div>
+				<!--Gallery-->
+				<div class="blackOutline primaryColor articleHeaderGallery">
+					<div class="articleImageContainer">
+						<a class="articleImageLink" href="./resources/img/programs/article/vectormatrix1.png" target="_blank">
+							<img class="articleHeaderImage" src="./resources/img/programs/article/vectormatrix1.png">
+							<img class="articleHeaderImage articleImageInactive" src="./resources/img/programs/article/vectormatrix2.png">
+							<img class="articleHeaderImage articleImageInactive" src="./resources/img/programs/article/vectormatrix3.png">
+							<img class="articleHeaderImage articleImageInactive" src="./resources/img/programs/article/vectormatrix4.png">
+						</a>
+					</div>
+					<!--Screenshot captions-->
+					<div class="articleImageText">A screenshot of an OpenGL application using my vectors and matrices</div>
+					<div class="articleImageText articleImageTextInactive">A snippet of my rotation matrix calculator, converting eulerian angles into quaternions</div>
+					<div class="articleImageText articleImageTextInactive">Some methods I created as a part of my three-element vector class</div>
+					<div class="articleImageText articleImageTextInactive">A snippet of the .obj importer I created, works using my vector and matrix classes</div>
+					<!--Screenshot selection-->
+					<div class="articleGalleryImageSelector">
+						<div class="articleGallerySelction" onclick="swapActiveImage(4,0);">
+							<img src="./resources/img/programs/article/vectormatrix1.png">
+							<div class="accentSubColor articleGallerySelectionOverlay articleSelectionActive"></div>
+						</div>
+						<div class="articleGallerySelction" onclick="swapActiveImage(4,1);">
+							<img src="./resources/img/programs/article/vectormatrix2.png">
+							<div class="blackElement articleGallerySelectionOverlay"></div>
+						</div>
+						<div class="articleGallerySelction" onclick="swapActiveImage(4,2);">
+							<img src="./resources/img/programs/article/vectormatrix3.png">
+							<div class="blackElement articleGallerySelectionOverlay"></div>
+						</div>
+						<div class="articleGallerySelction" onclick="swapActiveImage(4,3);">
+							<img src="./resources/img/programs/article/vectormatrix4.png">
+							<div class="blackElement articleGallerySelectionOverlay"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blackOutline accentColor articleTextContainer">
+				<p class="articleText">One of my modules of work was Graphics, which had us working in C++ and with OpenGL. The assessment for said module was to develop a graphics program, and the highest marking criteria included creating and using a custom-made library for vector and matrix calculations instead of OpenGL's own.</p>
+				<p class="articleText">In addition, I also wrote a basic .obj reader, which works in conjunction with my vectors and matrices to allow custom .obj files to be used in an OpenGL application.</p>
+				<p class="articleText">Going forward, I would like to make more appropriate use of references and pointers, along with destructors where necessary.</p>
+					
+				<div class="linkImageCombo">
+					<a href="https://github.com/SynthRhone/Project-Euler-Solutions-CPP" target="_blank">
+						<img src="./resources/img/icons/github_w.png">
+						<div class="articleLink boldText underLinedText linkText">Github Repo</div>
+					</a>
+				</div>	
+				
+			</div>
+		</section>
 		
 		<div class="articleSpacer"></div>
 		
 	</div>
 
 
-	<footer class="primaryColor">
+	<footer class="primaryColor blackOverline">
 		<div class="linkImageCombo">
 			<a href="https://github.com/PhantomRonix" target="_blank">
 				<img src="./resources/img/icons/github_w.png">
@@ -565,9 +661,12 @@
 				<div class="linkTextAlt footerlink">Email me!</div>
 			</a>
 		</div>
-
+		
+		<div class="footerInformation">
+			<p class="whiteText">Made entirely myself!</p>
+		</div>
 	</footer>
-
+	
 </body>
 <script src="resources/js/navImageFade.js"></script>
 <script src="resources/js/articleImageGallery.js"></script>

@@ -10,10 +10,9 @@
 	<link rel="shortcut icon" href="./resources/img/quicheicon.png">
 </head>
 
-
 <body>
 	<div class="background"></div>
-	<header class="primaryColor">
+	<header class="primaryColor blackUnderline">
 		<div class="headerTitleBar">
 			<a href="index.html">
 				<div class="headerTitleFlex">
@@ -130,6 +129,12 @@
 						<a class="primarySubColor headerNavDropdownLink" href="programs.html#euler">
 							<div class="linktext">
 								<h5 class="headerNavDropdownText normalWeightText">Project Euler Solutions (C++)</h5>
+							</div>
+						</a>
+						<!--Programs/Vectors/Matrices nav-->
+						<a class="primarySubColor headerNavDropdownLink" href="programs.html#vectormatrix">
+							<div class="linktext">
+								<h5 class="headerNavDropdownText normalWeightText">Custom Vector / Matrix Classes</h5>
 							</div>
 						</a>
 					</div>
@@ -462,7 +467,7 @@
 			<div class="accentColor sectionGridContent">
 				<div class="blackOutline sectionGridImageContainer">
 					<a class="sectionGridImageLink" href="./resources/img/programs/index/euler1.png" target="_blank">
-						<img class="sectionGridImage" src="./resources/img/programs/index/euler1.png" alt="Project Euler">
+						<img class="sectionGridImage" src="./resources/img/programs/index/euler1.png" alt="Project Euler Task 4">
 						<img class="sectionGridImage inactiveImage" src="./resources/img/programs/index/euler2.png" alt="Project Euler">
 						<img class="sectionGridImage inactiveImage" src="./resources/img/programs/index/euler3.png" alt="Project Euler">
 					</a>
@@ -493,6 +498,64 @@
 					</div>	
 				</div>
 			</div>
+			
+			<div class="gridDividerBacking"><div class="gridDividerLine"></div></div>
+			
+			<!--Vector / Matrix classes-->
+			<div class="accentColor sectionGridContent">
+				<div class="blackOutline sectionGridImageContainer">
+					<a class="sectionGridImageLink" href="./resources/img/programs/index/vectormatrix1.png" target="_blank">
+						<img class="sectionGridImage" src="./resources/img/programs/index/vectormatrix1.png" alt="A snippet of custom matrix code">
+						<img class="sectionGridImage inactiveImage" src="./resources/img/programs/index/vectormatrix2.png" alt="A snippet of custom vector code">
+						<img class="sectionGridImage inactiveImage" src="./resources/img/programs/index/vectormatrix3.png" alt="An OpenGL program using the custom matrices and vectors">
+					</a>
+					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(8, -1)" src="./resources/img/triangleL.png">
+					<img class="sectionImageArrow ArrowRight" onclick="switchImage(8, 1)" src="./resources/img/triangleR.png">
+				</div>
+				<div class="sectionGridText">
+					<h3 class="subHeaderText">Custom Vector / Matrix Classes</h3>
+					<p class="descText">A set of custom vector and matrix classes, I created for use with OpenGL</p>
+					<p class="descText">Handles a multitude of mathematics like camera and model matrices, quaternions and can be converted to arrays / vectors.</p>
+					<p class="descText">Created as a part of a graphics coursework project.</p>
+					<i>
+						Created with: 
+						<span class="moreInfo" title="Used as primary IDE">Visual Studio</span>, 
+						<span class="moreInfo" title="Created primarily for OpenGL applications">OpenGL</span> and C++.
+					</i>
+					
+					<div class="linkImageCombo">
+						<a href="https://github.com/SynthRhone/Project-Euler-Solutions-CPP" target="_blank">
+							<img src="./resources/img/icons/github_w.png">
+							<div class="linkTextAlt footerlink">Github Repo</div>
+						</a>
+					</div>
+					
+					<div class="linkImageCombo">
+						<a href="programs.html#vectormatrix">
+							<img src="./resources/img/icons/quiche_w.png">
+							<div class="linkTextAlt footerlink">More Info</div>
+						</a>
+					</div>	
+				</div>
+			</div>
+			
+			<!--Placeholder-->
+			<div class="accentColor sectionGridContent">
+				<div class="blackOutline sectionGridImageContainer">
+					<a class="sectionGridImageLink" href="./resources/img/smiley.png" target="_blank">
+						<img class="sectionGridImage" src="./resources/img/smiley.png" alt="debug smile">
+					</a>
+					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(9, -1)" src="./resources/img/triangleL.png">
+					<img class="sectionImageArrow ArrowRight" onclick="switchImage(9, 1)" src="./resources/img/triangleR.png">
+				</div>
+				<div class="sectionGridText">
+					<h3 class="subHeaderText">-</h3>
+					<p class="descText">-</p>
+					<i>-</i>
+				</div>
+			</div>
+			
+			
 		</div>
 	</section>
 	
@@ -513,8 +576,8 @@
 						<img class="sectionGridImage" src="./resources/img/art/index/vtuber.png" alt="VTuber Model">
 						<img class="sectionGridImage inactiveImage" src="./resources/img/art/index/vtuber2.png" alt="VTuber Model">
 					</a>
-					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(8, -1)" src="./resources/img/triangleL.png">
-					<img class="sectionImageArrow ArrowRight" onclick="switchImage(8, 1)" src="./resources/img/triangleR.png">
+					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(10, -1)" src="./resources/img/triangleL.png">
+					<img class="sectionImageArrow ArrowRight" onclick="switchImage(10, 1)" src="./resources/img/triangleR.png">
 				</div>
 				<div class="sectionGridText">
 					<h3 class="subHeaderText">VTuber Model</h3>
@@ -543,8 +606,8 @@
 					<a class="sectionGridImageLink" href="./resources/img/smiley.png" target="_blank">
 						<img class="sectionGridImage" src="./resources/img/smiley.png" alt="debug smile">
 					</a>
-					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(9, -1)" src="./resources/img/triangleL.png">
-					<img class="sectionImageArrow ArrowRight" onclick="switchImage(9, 1)" src="./resources/img/triangleR.png">
+					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(11, -1)" src="./resources/img/triangleL.png">
+					<img class="sectionImageArrow ArrowRight" onclick="switchImage(11, 1)" src="./resources/img/triangleR.png">
 				</div>
 				<div class="sectionGridText">
 					<h3 class="subHeaderText">-</h3>
@@ -572,8 +635,8 @@
 						<img class="sectionGridImage" src="./resources/img/other/index/tf2ClassPortraits_Red.png" alt="Custom TF2 Portraits (RED Team)">
 						<img class="sectionGridImage inactiveImage" src="./resources/img/other/index/tf2ClassPortraits_Blue.png" alt="Custom TF2 Portraits (BLU Team)">
 					</a>
-					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(10, -1)" src="./resources/img/triangleL.png">
-					<img class="sectionImageArrow ArrowRight" onclick="switchImage(10, 1)" src="./resources/img/triangleR.png">
+					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(12, -1)" src="./resources/img/triangleL.png">
+					<img class="sectionImageArrow ArrowRight" onclick="switchImage(12, 1)" src="./resources/img/triangleR.png">
 				</div>
 				<div class="sectionGridText">
 					<h3 class="subHeaderText">Custom TF2 Class Portraits</h3>
@@ -612,8 +675,8 @@
 						<img class="sectionGridImage inactiveImage" src="./resources/img/other/index/portfolio2.png" alt="Portfolio's source (new)">
 						<img class="sectionGridImage inactiveImage" src="./resources/img/other/index/portfolio3.png" alt="The website icon (it's a slice of quiche)">
 					</a>
-					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(11, -1)" src="./resources/img/triangleL.png">
-					<img class="sectionImageArrow ArrowRight" onclick="switchImage(11, 1)" src="./resources/img/triangleR.png">
+					<img class="sectionImageArrow ArrowLeft" onclick="switchImage(13, -1)" src="./resources/img/triangleL.png">
+					<img class="sectionImageArrow ArrowRight" onclick="switchImage(13, 1)" src="./resources/img/triangleR.png">
 				</div>
 				<div class="sectionGridText">
 					<h3 class="subHeaderText">Portfolio</h3>
@@ -637,7 +700,11 @@
 		</div>
 	</section>
 	
-	<footer class="primaryColor">
+	<!--This is here for spacing the footer out-->
+	<div class="sectionAnchor"></div>
+	
+	
+	<footer class="primaryColor blackOverline">
 		<div class="linkImageCombo">
 			<a href="https://github.com/PhantomRonix" target="_blank">
 				<img src="./resources/img/icons/github_w.png">
@@ -662,7 +729,10 @@
 				<div class="linkTextAlt footerlink">Email me!</div>
 			</a>
 		</div>
-
+		
+		<div class="footerInformation">
+			<p class="whiteText">Made entirely myself!</p>
+		</div>
 	</footer>
 </body>
 <script src="./resources/js/indexImageGallery.js"></script>

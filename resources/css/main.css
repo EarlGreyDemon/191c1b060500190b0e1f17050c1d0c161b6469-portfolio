@@ -60,32 +60,65 @@
 {
 	background-color: #0e2a56;
 }
+.primaryColorText
+{
+	color: #0e2a56;
+}
 .primarySubColor
 {
 	background-color: #284574;
 }
-
+.primarySubColorText
+{
+	color: #284574;
+}
 .accentColor
 {
 	background-color: #c8e9dd;
 }
+.accentColorText
+{
+	color: #c8e9dd;
+}
 .accentSubColor
 {
 	background-color: #94d8bf;
+}
+.accentSubColorText
+{
+	color: #94d8bf;
 }
 
 .whiteElement
 {
 	background-color: #fff;
 }
+.whiteText
+{
+	color: #fff;
+}
 .blackElement
 {
 	background-color: #000;
+}
+.blackText
+{
+	color: #000;
 }
 
 .blackOutline
 {
 	border: 5px solid #000;
+}
+
+.blackUnderline
+{
+	border-bottom: 5px solid #000;
+}
+
+.blackOverline
+{
+	border-top: 5px solid #000;
 }
 
 
@@ -249,7 +282,7 @@ span.moreInfo
 footer
 {
 	margin: 0px;
-	padding: 20px 25px;
+	padding: 15px 25px;
 }
 
 a.footerlink
@@ -288,4 +321,19 @@ div.linkImageCombo > a
 	width: 100%;
 	display: inline-block;
 	text-decoration: none;
+}
+
+div.footerInformation
+{
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	top: -8px;
+}
+
+div.footerInformation > p
+{
+	text-align: right;
+	font-style: italic;
+	margin: 0px;
 }
